@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 1969748384}
   - component: {fileID: 1969748383}
   - component: {fileID: 1969748385}
+  - component: {fileID: 1969748386}
   m_Layer: 0
   m_Name: loseBg
   m_TagString: Untagged
@@ -386,6 +387,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 18, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &1969748386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969748382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7217c9ab94f074bad825a8f692a71f26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2015796516
 GameObject:
   m_ObjectHideFlags: 0
