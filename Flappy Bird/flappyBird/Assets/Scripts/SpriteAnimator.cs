@@ -12,7 +12,9 @@ public int currentFrame;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        secondsPerFrame = 1/framesPerSecond;
+        Invoke("NextFrame", secondsPerFrame);
     }
   void NextFrame()
   {
