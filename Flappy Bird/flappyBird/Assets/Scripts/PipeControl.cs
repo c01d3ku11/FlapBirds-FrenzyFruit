@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PipeControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
+public float destroyPos = -12;
+   
+
 
     // Update is called once per frame
     void Update()
     {
-        
+       transform.position = transform.position + Vector3.left * speed * Time.deltaTime;
+       if(transform.position.x < destroyPos){
+           GameObject.Destroy(gameObject);
+       } 
     }
 }
