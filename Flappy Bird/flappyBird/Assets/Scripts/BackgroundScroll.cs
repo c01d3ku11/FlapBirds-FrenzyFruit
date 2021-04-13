@@ -6,10 +6,12 @@ public class BackgroundScroll : MonoBehaviour
 {
     public Material myMaterial;
     public float speed;
+   
     // Start is called before the first frame update
     void Start()
     {
-        //myMaterial = GetComponent<SpriteRenderer>().material;
+        myMaterial = GetComponent<SpriteRenderer>().material;
+  
     }
 
     // Update is called once per frame
