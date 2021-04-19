@@ -7,10 +7,13 @@ public class ItemControl : MonoBehaviour
     public Rigidbody2D myRigid;
     public float speed;
     public bool isDynamite;
+    public int itemPoints;
+    public GameControl myGame;
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
+        myGame = GameObject.Find("GameManager").GetComponent<GameControl>();
        Spawn();
     }
 
@@ -23,11 +26,11 @@ public class ItemControl : MonoBehaviour
 {
 if (isDynamite)
 {
-//game over
+myGame.GameOver();
 }
 else
 {
-//add points
+myGame.AddPoints(itemPoints);
 Spawn();
 }
 }

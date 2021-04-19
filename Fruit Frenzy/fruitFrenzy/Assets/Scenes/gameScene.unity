@@ -593,12 +593,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 445676421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Script: {fileID: 11500000, guid: c1b585e0ca6e14c3d9829d8904e3783a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myRigid: {fileID: 0}
   speed: 4
   isDynamite: 0
+  itemPoints: -100
+  myGame: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156886769}
+  - component: {fileID: 1156886770}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -778,6 +781,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156886770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156886768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ef9fd229afd64d069271924e7cfed45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 1199784464}
 --- !u!1 &1199784462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,12 +1047,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1204544707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Script: {fileID: 11500000, guid: c1b585e0ca6e14c3d9829d8904e3783a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myRigid: {fileID: 0}
   speed: 4
   isDynamite: 1
+  itemPoints: 0
+  myGame: {fileID: 0}
 --- !u!1 &1526772836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,12 +1215,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1526772836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Script: {fileID: 11500000, guid: c1b585e0ca6e14c3d9829d8904e3783a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myRigid: {fileID: 0}
   speed: 4
   isDynamite: 0
+  itemPoints: 50
+  myGame: {fileID: 0}
 --- !u!1 &1583902410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,9 +1379,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583902410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Script: {fileID: 11500000, guid: c1b585e0ca6e14c3d9829d8904e3783a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myRigid: {fileID: 0}
   speed: 4
   isDynamite: 0
+  itemPoints: 100
+  myGame: {fileID: 0}
