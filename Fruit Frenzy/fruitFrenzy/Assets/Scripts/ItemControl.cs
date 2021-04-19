@@ -6,6 +6,7 @@ public class ItemControl : MonoBehaviour
 {
     public Rigidbody2D myRigid;
     public float speed;
+    public bool isDynamite;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,4 +19,17 @@ public class ItemControl : MonoBehaviour
        transform.position = new Vector3(Random.Range(-4,4), Random.Range(-4,4),0);
        myRigid.velocity = Random.insideUnitCircle.normalized * speed;
    }
+   void OnMouseDown()
+{
+if (isDynamite)
+{
+//game over
 }
+else
+{
+//add points
+Spawn();
+}
+}
+}
+

@@ -193,7 +193,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19.56, y: 11}
+  m_Size: {x: 1, y: 11}
   m_EdgeRadius: 0
 --- !u!61 &47690135
 BoxCollider2D:
@@ -204,7 +204,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 47690132}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 342a38d9d3aef4e6aa083a3d34c68ba5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 445676422}
   - component: {fileID: 445676425}
   - component: {fileID: 445676424}
+  - component: {fileID: 445676426}
   m_Layer: 0
   m_Name: cake
   m_TagString: Untagged
@@ -413,13 +414,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445676421}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalRotation: {x: 0.011533163, y: -0, z: -0, w: 0.9999335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.322, y: 0, z: 0}
 --- !u!50 &445676424
 Rigidbody2D:
   serializedVersion: 4
@@ -484,6 +485,21 @@ PolygonCollider2D:
       - {x: 0.305, y: -0.405}
       - {x: 0.345, y: -0.21499999}
       - {x: 0.45499998, y: -0.085}
+--- !u!114 &445676426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445676421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigid: {fileID: 0}
+  speed: 4
+  isDynamite: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +595,7 @@ GameObject:
   - component: {fileID: 1204544708}
   - component: {fileID: 1204544711}
   - component: {fileID: 1204544710}
+  - component: {fileID: 1204544712}
   m_Layer: 0
   m_Name: dynamite
   m_TagString: Untagged
@@ -643,13 +660,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204544707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalRotation: {x: 0.011533163, y: -0, z: -0, w: 0.9999335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.322, y: 0, z: 0}
 --- !u!50 &1204544710
 Rigidbody2D:
   serializedVersion: 4
@@ -732,6 +749,21 @@ PolygonCollider2D:
       - {x: 0.005, y: 0.21499999}
       - {x: -0.005, y: 0.205}
       - {x: 0.005, y: 0.205}
+--- !u!114 &1204544712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204544707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigid: {fileID: 0}
+  speed: 4
+  isDynamite: 1
 --- !u!1 &1526772836
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +776,7 @@ GameObject:
   - component: {fileID: 1526772837}
   - component: {fileID: 1526772840}
   - component: {fileID: 1526772839}
+  - component: {fileID: 1526772841}
   m_Layer: 0
   m_Name: apple
   m_TagString: Untagged
@@ -808,13 +841,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1526772836}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalRotation: {x: 0.011533163, y: -0, z: -0, w: 0.9999335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.322, y: 0, z: 0}
 --- !u!50 &1526772839
 Rigidbody2D:
   serializedVersion: 4
@@ -882,6 +915,21 @@ PolygonCollider2D:
       - {x: 0.255, y: -0.475}
       - {x: 0.265, y: -0.465}
       - {x: 0.42499998, y: -0.225}
+--- !u!114 &1526772841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526772836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigid: {fileID: 0}
+  speed: 4
+  isDynamite: 0
 --- !u!1 &1583902410
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +942,7 @@ GameObject:
   - component: {fileID: 1583902411}
   - component: {fileID: 1583902414}
   - component: {fileID: 1583902413}
+  - component: {fileID: 1583902415}
   m_Layer: 0
   m_Name: banana
   m_TagString: Untagged
@@ -958,13 +1007,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583902410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalRotation: {x: 0.011533163, y: -0, z: -0, w: 0.9999335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.322, y: 0, z: 0}
 --- !u!50 &1583902413
 Rigidbody2D:
   serializedVersion: 4
@@ -1028,3 +1077,18 @@ PolygonCollider2D:
       - {x: 0.21499999, y: -0.42499998}
       - {x: 0.345, y: -0.315}
       - {x: 0.39499998, y: -0.145}
+--- !u!114 &1583902415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583902410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51b5dff7160a4b878ac221030e7bfcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigid: {fileID: 0}
+  speed: 4
+  isDynamite: 0
