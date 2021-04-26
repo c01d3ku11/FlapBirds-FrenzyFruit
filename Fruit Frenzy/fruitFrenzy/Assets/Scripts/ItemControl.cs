@@ -9,11 +9,14 @@ public class ItemControl : MonoBehaviour
     public bool isDynamite;
     public int itemPoints;
     public GameControl myGame;
+    public AudioSource myAudioSource;
+public AudioClip myClip;
     // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
         myGame = GameObject.Find("GameManager").GetComponent<GameControl>();
+        myAudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
        Spawn();
     }
 
@@ -31,6 +34,7 @@ myGame.GameOver();
 else
 {
 myGame.AddPoints(itemPoints);
+myAudioSource.PlayOneShot(myClip);
 Spawn();
 }
 }

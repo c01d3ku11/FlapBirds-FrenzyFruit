@@ -165,3 +165,5 @@ MonoBehaviour:
   isDynamite: 0
   itemPoints: -100
   myGame: {fileID: 0}
+  myAudioSource: {fileID: 0}
+  myClip: {fileID: 8300000, guid: 628ddacb29d474a05af0034c3d5777e8, type: 3}
