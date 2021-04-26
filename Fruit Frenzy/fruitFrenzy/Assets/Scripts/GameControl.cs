@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -26,8 +27,8 @@ public class GameControl : MonoBehaviour
 
     public void GameOver()
 {
-//save the score
-//go to game over screen
+PlayerPrefs.SetInt("userScore", score);
+SceneManager.LoadScene("loseScene");
 }
 
     
