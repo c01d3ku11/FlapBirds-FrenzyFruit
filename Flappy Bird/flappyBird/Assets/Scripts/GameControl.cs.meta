@@ -3,7 +3,10 @@ guid: 19cdcdeb5219d4a8eb9c43ec7d982ece
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - myText: {instanceID: 0}
+  - bird: {instanceID: 0}
+  - pipe: {fileID: 8229973172503230858, guid: d37d501b4f43546b08fd6d37880042ab, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
