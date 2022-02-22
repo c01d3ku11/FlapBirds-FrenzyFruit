@@ -283,6 +283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   myText: {fileID: 324965416}
+  bird: {fileID: 1853436527}
+  pipe: {fileID: 8229973172503230858, guid: d37d501b4f43546b08fd6d37880042ab, type: 3}
 --- !u!1 &324965414
 GameObject:
   m_ObjectHideFlags: 0
