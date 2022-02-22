@@ -15,14 +15,8 @@ public class GameControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if((int)bird.transform.position.x==-(int)pipe.transform.position.x)
-       {
-       score++;
-       myText.text = score.ToString();
-       }
         //score = score + Time.deltaTime;
         //myText.text = score.ToString();
-    
     }
    
     public void GameOver()
